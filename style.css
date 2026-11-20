@@ -1,0 +1,260 @@
+
+/* =====================================
+   PAGINAS INTERNAS DE EUFONIA
+===================================== */
+
+.pagina-extra {
+    min-height: 100vh;
+    background: #090d24;
+    color: #ffffff;
+    font-family: 'VT323', monospace;
+    margin: 0;
+}
+
+.encabezado-extra {
+    background: #111936;
+    border-bottom: 3px solid #287bff;
+    padding: 22px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo-extra {
+    color: #a4ff52;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.encabezado-extra nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.encabezado-extra nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.encabezado-extra nav a:hover {
+    color: #a4ff52;
+}
+
+.contenido-extra {
+    width: 88%;
+    max-width: 1100px;
+    margin: 55px auto;
+}
+
+.contenido-extra h1 {
+    color: #a4ff52;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(20px, 4vw, 32px);
+    line-height: 1.7;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.etiqueta-extra {
+    color: #9c55ff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.panel-extra {
+    background: #111936;
+    border: 2px solid #287bff;
+    border-radius: 12px;
+    padding: 28px;
+    margin: 25px 0;
+    box-shadow: 5px 5px 0 #39216b;
+}
+
+.panel-extra h2 {
+    color: #a4ff52;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.panel-extra p,
+.panel-extra li {
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.panel-extra li {
+    margin-bottom: 8px;
+}
+
+.visor-pdf {
+    width: 100%;
+    height: 600px;
+    border: 2px solid #9c55ff;
+    border-radius: 8px;
+    background: #ffffff;
+    margin: 20px 0;
+}
+
+.boton-extra {
+    display: inline-block;
+    background: #287bff;
+    color: #ffffff;
+    padding: 14px 22px;
+    border: 2px solid #a4ff52;
+    border-radius: 6px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boton-extra:hover {
+    background: #9c55ff;
+    transform: translateY(-3px);
+}
+
+.beneficios-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.beneficios-lista article {
+    background: #18244a;
+    border: 2px solid #9c55ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.beneficios-lista h3 {
+    color: #a4ff52;
+    font-size: 25px;
+}
+
+.beneficios-lista p {
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.contenedor-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 3px solid #9c55ff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.nota-extra {
+    color: #a4ff52;
+    font-size: 18px !important;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.integrante-card {
+    background: #111936;
+    border: 2px solid #287bff;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 5px 5px 0 #39216b;
+}
+
+.integrante-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #a4ff52;
+    border-radius: 10px;
+    background: #18244a;
+}
+
+.integrante-card h2 {
+    color: #a4ff52;
+    font-size: 27px;
+}
+
+.integrante-card p {
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.cargo-integrante {
+    color: #9c55ff;
+    font-weight: bold;
+}
+
+.regresar-extra {
+    display: inline-block;
+    color: #a4ff52;
+    font-size: 23px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.regresar-extra:hover {
+    color: #9c55ff;
+}
+
+.pie-extra {
+    background: #111936;
+    border-top: 2px solid #287bff;
+    text-align: center;
+    padding: 22px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 650px) {
+    .encabezado-extra {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado-extra nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .encabezado-extra nav a {
+        font-size: 18px;
+    }
+
+    .contenido-extra {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .panel-extra {
+        padding: 18px;
+    }
+
+    .beneficios-lista,
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visor-pdf {
+        height: 420px;
+    }
+}
